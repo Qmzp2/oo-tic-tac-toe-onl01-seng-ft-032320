@@ -17,6 +17,10 @@ def display_board
     input.to_i - 1 
   end
   
+   def move(index, token = "X")
+    @board[index] = token
+  end
+  
   
   
 def play
@@ -66,9 +70,7 @@ end
   end
 
   
-  def move(index, token = "X")
-    @board[index] = token
-  end
+ 
 
   
   def current_player
