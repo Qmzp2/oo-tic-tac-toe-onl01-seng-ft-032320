@@ -21,7 +21,9 @@ def display_board
     @board[index] = token
   end
   
-  
+  def position_taken?(index)
+    !(@board[index].nil? || @board[index] == " ")
+  end
   
 def play
     while over? == false
@@ -65,9 +67,7 @@ end
   end
 
   
-  def position_taken?(index)
-    !(@board[index].nil? || @board[index] == " ")
-  end
+  
 
   
  
