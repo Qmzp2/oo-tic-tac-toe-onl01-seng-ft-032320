@@ -29,23 +29,6 @@ def display_board
     index.between?(0,8) && !(position_taken?(index))
   end
 
-
-  
-def play
-    while over? == false
-    	turn
-    end
-
-    if draw?
-    puts "Cat's Game!"
-    elsif winner == "X" 
-    puts "Congratulations X!"
-    elsif winner == "O"
-    puts "Congratulations O!"
-end
-end
-
- 
 def turn
 	puts "Please enter 1-9:"
 	user_input = gets.chomp
@@ -64,6 +47,23 @@ def turn
 		input = gets.chomp
 	end
 end
+  
+def play
+    while over? == false
+    	turn
+    end
+
+    if draw?
+    puts "Cat's Game!"
+    elsif winner == "X" 
+    puts "Congratulations X!"
+    elsif winner == "O"
+    puts "Congratulations O!"
+end
+end
+
+ 
+
 
 
 
