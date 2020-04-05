@@ -68,6 +68,10 @@ end
     return a || b
   end
   
+  def full?
+    !@board.any?{|x| x == "" || x == " "}
+  end
+  
   
   
 def play
@@ -139,9 +143,7 @@ end
   end
 
  
-  def full?
-    !@board.any?{|x| x == "" || x == " "}
-  end
+  
 
   
   def winner
