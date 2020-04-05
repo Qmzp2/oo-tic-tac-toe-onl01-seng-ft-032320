@@ -114,11 +114,12 @@ def draw?
     [0,1,2], # Top row
     [3,4,5],  # Middle row
     [6,7,8],  # Bottom row
-    [0,3,6],  # Left collumb 
-    [1,4,7],  # Middle collumb
-    [2,5,8],  # Right collumb
+    [0,3,6],  # Left collum
+    [1,4,7],  # Middle collum
+    [2,5,8],  # Right collum
     [0,4,8],  # Diagnol 1
     [2,4,6]  # Diagnol 2
+    #Hope I didn't miss any! 
   ]
 
  
