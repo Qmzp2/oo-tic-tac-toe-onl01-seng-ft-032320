@@ -10,12 +10,12 @@ def play
     end
 
     if draw?
-    	puts "Cat's Game!"
+    puts "Cat's Game!"
     elsif winner == "X" 
-    	puts "Congratulations X!"
+    puts "Congratulations X!"
     elsif winner == "O"
-    	puts "Congratulations O!"
-    end
+    puts "Congratulations O!"
+end
 end
 
  
@@ -24,11 +24,11 @@ def turn
 	user_input = gets.chomp
 	index = input_to_index(user_input)
 	if valid_move?(index) == true && current_player == "X"
-			move(index, value = "X")
-			puts display_board
+	  move(index, value = "X")
+		puts display_board
 	elsif valid_move?(index) == true && current_player == "O"
-			move(index, value = "O")
-			puts display_board
+		move(index, value = "O")
+		puts display_board
 	elsif valid_move?(index) == false
 		puts "Please enter 1-9:"
 		input = gets.chomp
