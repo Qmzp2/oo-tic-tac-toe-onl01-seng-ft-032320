@@ -122,7 +122,4 @@ def draw?
     #Hope I didn't miss any! 
   ]
 
- 
-  
-
 end
