@@ -99,32 +99,6 @@ def play
 end
 end
 
- 
-
-
-
-
-  
-  
-  
-  
-
-  
- 
-
-  
-  
-
-  
-  
-
- 
-  
-
-  
-  
-  
-
   
   WIN_COMBINATIONS = [
     # Reminder: Here are the positions. Starts with 0!!!
