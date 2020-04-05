@@ -38,9 +38,9 @@ def turn
 	end
 end
 
- 
+ #b/c its counts at 0, so this puts w/e the player puts and subtracts 1
   def input_to_index(input)
-    input.to_i - 1
+    input.to_i - 1 
   end
 
   
