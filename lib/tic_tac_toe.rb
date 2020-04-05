@@ -99,6 +99,9 @@ def play
 end
 end
 
+def draw?
+    !won? && full?
+  end
   
   WIN_COMBINATIONS = [
     # Reminder: Here are the positions. Starts with 0!!!
@@ -119,8 +122,6 @@ end
   ]
 
  
-  def draw?
-    !won? && full?
-  end
+  
 
 end
