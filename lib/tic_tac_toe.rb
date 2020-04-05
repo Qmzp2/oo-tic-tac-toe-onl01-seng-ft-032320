@@ -48,7 +48,9 @@ def turn
 	end
 end
   
-  
+  def turn_count
+    @board.count{|token| token == "X" || token == "O"}
+  end
   
   
   
@@ -87,9 +89,7 @@ end
   end
 
   
-  def turn_count
-    @board.count{|token| token == "X" || token == "O"}
-  end
+  
 
  
   
