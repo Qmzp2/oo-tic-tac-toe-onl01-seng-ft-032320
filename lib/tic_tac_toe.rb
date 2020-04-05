@@ -73,6 +73,11 @@ end
   end
   
   
+  def over?
+    won? || draw?
+  end
+
+
   
 def play
     while over? == false
@@ -111,10 +116,6 @@ end
   
 
   
-  def over?
-    won? || draw?
-  end
-
   
   
 
