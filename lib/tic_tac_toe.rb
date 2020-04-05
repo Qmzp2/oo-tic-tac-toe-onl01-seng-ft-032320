@@ -29,6 +29,7 @@ def display_board
     index.between?(0,8) && !(position_taken?(index))
   end
 
+
   
 def play
     while over? == false
