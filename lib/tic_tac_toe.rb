@@ -25,6 +25,8 @@ def display_board
     !(@board[index].nil? || @board[index] == " ")
   end
   
+  
+  
 def play
     while over? == false
     	turn
