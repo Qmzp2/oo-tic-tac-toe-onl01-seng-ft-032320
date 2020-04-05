@@ -17,6 +17,8 @@ def display_board
     input.to_i - 1 
   end
   
+  
+  
 def play
     while over? == false
     	turn
