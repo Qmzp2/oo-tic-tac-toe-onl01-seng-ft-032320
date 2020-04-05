@@ -23,7 +23,8 @@ class TicTacToe
       move(index, cp)
       display_board
     else
-      turn
+      puts "I'm sorry, that is not a valid option, please try again"
+      turn 
     end
   end
 
