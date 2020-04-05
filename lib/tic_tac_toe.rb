@@ -56,6 +56,18 @@ end
     turn_count % 2 == 0 ? "X" : "O"
   end
   
+  def won?
+    a = WIN_COMBINATIONS.find{
+      |combo|
+      @board[combo[0]] == "X" && @board[combo[1]] == "X" && @board[combo[2]] == "X"
+    }
+    b = WIN_COMBINATIONS.find{
+      |combo|
+      @board[combo[0]] == "O" && @board[combo[1]] == "O" && @board[combo[2]] == "O"
+    }
+    return a || b
+  end
+  
   
   
 def play
@@ -100,17 +112,7 @@ end
   end
 
   
-  def won?
-    a = WIN_COMBINATIONS.find{
-      |combo|
-      @board[combo[0]] == "X" && @board[combo[1]] == "X" && @board[combo[2]] == "X"
-    }
-    b = WIN_COMBINATIONS.find{
-      |combo|
-      @board[combo[0]] == "O" && @board[combo[1]] == "O" && @board[combo[2]] == "O"
-    }
-    return a || b
-  end
+  
 
   
   WIN_COMBINATIONS = [
